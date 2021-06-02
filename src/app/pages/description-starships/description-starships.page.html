@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="tabs/starships"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{starships.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2>{{starships.name}}</h2>
+  <ion-card>
+    <ion-item>
+      <ion-icon name = "planet" slot="start"></ion-icon>
+      <ion-label>{{starships.terrain}}</ion-label>
+    </ion-item>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p>Consumables</p>
+            <p>{{starships.consumables}}</p>
+          </ion-col>
+          <ion-col>
+            <p>Cargo Capacity</p>
+            <p>{{starships.cargo_capacity}}</p>
+          </ion-col>
+          <ion-col>
+            <p>Length</p>
+            <p>{{starships.length}}</p>
+          </ion-col>
+          </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
